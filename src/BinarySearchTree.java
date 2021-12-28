@@ -194,9 +194,7 @@ public class BinarySearchTree {
 		bst.treeInsert(new Node(22));
 		bst.treeInsert(new Node(1));
 		bst.treeInsert(new Node(14));
-		//bst.treeDelete(new Node(1));
 		
-		// look for node with key=14
 		Node t = bst.treeSearch(14);
 		if (t == null) {
 			System.out.println("Node NOT found.");
@@ -205,6 +203,13 @@ public class BinarySearchTree {
 		
 		System.out.println("Tree minimum = "+bst.treeMinimum(bst.root).key);
 		System.out.println("Tree maximum = "+bst.treeMaximum(bst.root).key);
+		System.out.println("Tree successor 5 = "+bst.treeSuccessor(bst.treeSearch(5)).key);
+		System.out.println("Tree successor 7 = "+bst.treeSuccessor(bst.treeSearch(7)).key);
+		
+		bst.print2D();
+		
+		System.out.println("\nDelete the node with key 16");
+		bst.treeDelete(bst.treeSearch(16));
 
 		bst.print2D();
 	}
