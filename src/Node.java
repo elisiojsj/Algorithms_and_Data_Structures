@@ -1,3 +1,6 @@
+/*
+ * public class of node element for BSTs
+ */
 public class Node {
 	int key;
 	Node left;

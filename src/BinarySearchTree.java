@@ -15,6 +15,7 @@ public class BinarySearchTree {
 	 * The version implemented is the iterative one.
 	 * @param x The node to start looking from.
 	 * @param k The value to be found.
+	 * @return x The node found with the corresponding key.
 	 */
 //	public Node treeSearch(Node x, int k) {
 	public Node treeSearch(int k) {
@@ -32,6 +33,8 @@ public class BinarySearchTree {
 	/*
 	 * public method to find the node with minimum key in the subtree
 	 * rooted at a given node x.
+	 * @param x The node to start the search.
+	 * @return x The minimum node found.
 	 */
 	public Node treeMinimum(Node x) {
 		while (x.left != null) {
@@ -43,6 +46,8 @@ public class BinarySearchTree {
 	/*
 	 * public method to find the node with maximum key in the subtree
 	 * rooted at a given node x.
+	 * @param x The node to start the search.
+	 * @return x The maximum node found.
 	 */
 	public Node treeMaximum(Node x) {
 		while (x.right != null) {
@@ -55,6 +60,7 @@ public class BinarySearchTree {
 	 * public method to return the successor of a node x in a BST if it exists
 	 * and null if x has the largest key in the tree.
 	 * @param x The node of which the successor is to be found.
+	 * @return y The successor node found.
 	 */
 	public Node treeSuccessor(Node x) {
 		if (x.right != null) {
@@ -140,8 +146,8 @@ public class BinarySearchTree {
 	/*
 	 * public method to print the BST recursively in 2D.
 	 * Copied from https://www.geeksforgeeks.org/print-binary-tree-2-dimensions/
-	 * @param x 
-	 * @param space The 
+	 * @param x The node to be printed.
+	 * @param space The space between nodes to be printed.
 	 */
 	public void print2DUtil(Node x, int space)
 	{
