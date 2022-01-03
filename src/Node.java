@@ -6,6 +6,7 @@ public class Node {
 	Node left;
 	Node right;
 	Node parent;
+	int flag; // for postorder walk
 	
 	public Node(int x) {
 		this.key = x;
